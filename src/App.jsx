@@ -17,7 +17,6 @@ export default function App() {
         <h1 className="login__brand">
           gawon<span>26</span>
         </h1>
-        <p className="login__lead">로그인하고 계속하세요.</p>
 
         <form className="login__form" onSubmit={handleSubmit}>
           <div className="field">

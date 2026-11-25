@@ -103,13 +103,6 @@ input {
   color: var(--leaf-mid);
 }
 
-.login__lead {
-  margin: 0.85rem 0 0;
-  color: var(--ink-muted);
-  font-size: 1rem;
-  font-weight: 400;
-}
-
 .login__form {
   display: grid;
   gap: 1rem;
