@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 export default function App() {
-  const [email, setEmail] = useState('')
+  const [id, setId] = useState('')
   const [password, setPassword] = useState('')
 
   function handleSubmit(event) {
@@ -21,15 +21,14 @@ export default function App() {
 
         <form className="login__form" onSubmit={handleSubmit}>
           <div className="field">
-            <label htmlFor="email">Email</label>
+            <label htmlFor="id">ID</label>
             <input
-              id="email"
-              name="email"
-              type="email"
-              autoComplete="email"
-              placeholder="you@example.com"
-              value={email}
-              onChange={(event) => setEmail(event.target.value)}
+              id="id"
+              name="id"
+              type="text"
+              autoComplete="username"
+              value={id}
+              onChange={(event) => setId(event.target.value)}
               required
             />
           </div>
@@ -41,7 +40,6 @@ export default function App() {
               name="password"
               type="password"
               autoComplete="current-password"
-              placeholder="••••••••"
               value={password}
               onChange={(event) => setPassword(event.target.value)}
               required
@@ -52,13 +50,6 @@ export default function App() {
             Sign in
           </button>
         </form>
-
-        <p className="login__hint">
-          계정이 없나요?{' '}
-          <button type="button" onClick={() => {}}>
-            가입하기
-          </button>
-        </p>
       </div>
     </main>
   )
